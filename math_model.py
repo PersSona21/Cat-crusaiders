@@ -9,8 +9,8 @@ stages = [
     {'mass_stage': 50_000, 'mass_fuel': 110_000, 'burn_time': 90, 'f_tract': 3_000_000}, 
     {'mass_stage': 20_000, 'mass_fuel': 30_000, 'burn_time': 65, 'f_tract': 700_000}, 
 ] 
-e = 2.718281828459045
-pi = 3.14
+e = np.e
+pi = np.pi
 
 
 MU = 0.028  # молярная масса воздуха, кг/моль 
@@ -94,7 +94,7 @@ speed_y = np.concatenate([result1[:, 3], result2[:, 3]])
 
 
 graphics = dict()
-with open("data.json", mode='r', encoding="UTF-8") as f:
+with open("C:/Users/MialistaPC/Downloads/data (2).json") as f:
     graphics = json.load(f)
     
 timeKSP = graphics["time"]
@@ -109,30 +109,33 @@ speedY_KSP = graphics["speedY"][:m]
 plt.figure(figsize=(12, 12))  
 
 plt.subplot(2, 2, 1)
-plt.plot(time, pos_y)
-plt.plot(timeKSP, y_coords_KSP, color="red", label="Координата по Y KSP")
+plt.plot(time, pos_y, label="Координата по Y в мат. модели")
+plt.plot(timeKSP, y_coords_KSP, color="red", label="Координата по Y в KSP")
 plt.xlabel('Время (с)')
 plt.ylabel('Координата по Y')
+plt.legend()
+
 
 
 plt.subplot(2, 2, 2)
-plt.plot(time, pos_x)
+plt.plot(time, pos_x, label="Координата по X в мат. модели")
 plt.plot(timeKSP, x_coords_KSP, color="red", label="Координата по X KSP")
 plt.xlabel('Время (с)')
 plt.ylabel('Координата по X (м)')
+plt.legend()
 
 plt.subplot(2, 2, 3)
-plt.plot(time, speed_y)
+plt.plot(time, speed_y, label="Скорость по Y в мат. модели")
 plt.plot(timeKSP, speedY_KSP, color="red", label="Скорость по Y в KSP")
-plt.xlabel('Время')
+plt.xlabel('Время (с)')
 plt.ylabel('Скорость по Y')
+plt.legend()
 
 
 plt.subplot(2, 2, 4)
-plt.plot(time, speed_x)
+plt.plot(time, speed_x, label="Скорость по X в мат. модели")
 plt.plot(timeKSP, speedX_KSP, color="red", label="Скорость по X KSP")
 plt.xlabel('Время (с)')
 plt.ylabel('Скорость по X')
-
-
+plt.legend()
 plt.show()
