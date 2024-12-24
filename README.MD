@@ -1,5 +1,5 @@
 # Космические Котики
-![Image alt](https://github.com/PersSona21/Cat-crusaiders/raw/main/logo.png)
+![Image alt](https://github.com/PersSona21/Cat-crusaiders/raw/main/assets/logo.png)
 
 ## **О Проекте**
 
@@ -29,4 +29,4 @@ KSP версии 1.12.5 с модами Making History и Breaking Ground
 ## **Ссылки**
 [**Ссылка на гугл диск**](https://drive.google.com/drive/folders/19osIPzeUaEgjMiuaoDHDAexUyw8YwC99?usp=sharing)
 
-![Image alt](https://github.com/PersSona21/Cat-crusaiders/raw/main/qr.png)
+![Image alt](https://github.com/PersSona21/Cat-crusaiders/raw/main/assets/qr.png)
