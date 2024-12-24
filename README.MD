@@ -25,3 +25,8 @@ KSP версии 1.12.5 с модами Making History и Breaking Ground
 |Палкин Д.Д|     Лидер/Программист    | Программирование мат модели, оформление отчёта и видео|
 |Павлов И.М.|     Физик/Математик    |Формирование физической и математической моделей|
 |Прохоров В.И.|     KSP    | Работа с KSP, оформление github, программирование на Python|
+
+## **Ссылки**
+[Ссылка на гугл диск](https://drive.google.com/drive/folders/19osIPzeUaEgjMiuaoDHDAexUyw8YwC99?usp=sharing)
+
+![Image alt](https://github.com/PersSona21/Cat-crusaiders/raw/main/qr.png)
